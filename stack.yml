@@ -3,12 +3,15 @@ Parameters:
   NotificationEmail:
     Type: String
     Description: Email address to receive budget alerts.
+    MinLength: 1
   MonthlyBudget:
     Type: Number
     Description: (USD) Monthly budget in USD.
+    MinLength: 1
   AlertThreshold:
     Type: Number
     Description: (%) Alert when forecasted budget exceeds this percentage.
+    MinLength: 1
 Description: Sets budget alerts
 Resources:
   Budget:
